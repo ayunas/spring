@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layouts :: bootstrap">
+    <title>New Stakeholder</title>
+</head>
+<body>
+<nav th:replace="layouts :: navvy"/>
+<form action="/stakeholders/save" method="post" th:object="${stakeholder}">
+    <input type=text placeholder="First Name" th:field="${stakeholder.firstName}">
+    <input type=text placeholder="Last Name" th:field="${stakeholder.lastName}">
+    <input type=text placeholder="Role" th:field="${stakeholder.role}">
+
+    <select th:field="${stakeholder.projects}">
+        <option th:each="p : ${projects}"
+                th:text="${p.name}"
+                th:value="${p.id}"
+        />
+
+        </option>
+    </select>
+
+
+    <button type="submit">Add Stakeholder</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head th:replace="layouts :: bootstrap">
+    <title>Home Page</title>
+</head>
+
+<body>
+<nav th:replace="layouts :: navvy"/>
+<h2>Project Management - The Web App</h2>
+<div class="table-chart">
+    <table class="table table-hover table-dark">
+        <thead>
+        <tr>
+            <th>Project</th>
+            <th>Stakeholders</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="ps : ${projectStakes}">
+            <td th:text="${ps.projectName}"/>
+            <td th:text="${ps.stakeholders}"/>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="col-md-4">
+        <canvas id="pieChart" height="50" width="50">
+            <script>
+                const chartData = "[[${stageJSON}]]";
+            </script>
+        </canvas>
+    </div>
+</div>
+<table class="table table-hover table-dark stage-table">
+    <thead>
+    <tr>
+        <th>Project Stage</th>
+        <th>Project Count</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="ps : ${projectStages}">
+        <td th:text="${ps.stage}"/>
+        <td th:text="${ps.projectCount}"/>
+    </tr>
+    </tbody>
+</table>
+</body>
+
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>-->
+<script type="text/javascript" th:src="@{chart.js}"></script>
+
+</html>

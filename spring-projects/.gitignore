@@ -1,0 +1,5 @@
+**/out/
+**/lib/
+**/.idea/
+.zip
+.DS_Store

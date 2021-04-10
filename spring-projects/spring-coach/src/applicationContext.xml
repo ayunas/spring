@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--    load the properties file-->
+    <context:property-placeholder location="classpath:sport.properties"/>
+
+
+    <!--    Define the beans here -->
+
+    <!--    <bean id="myCoach" class="com.luv2code.springdemo.TrackCoach"></bean>-->
+
+    <!--    <bean id="myCoach" class="com.luv2code.springdemo.BaseballCoach"></bean>-->
+    <bean id="fortune" class="com.luv2code.springdemo.HappyFortuneService"></bean>
+
+    <bean id="trainer" class="com.luv2code.springdemo.TrainingCoach">
+        <property name="fortuneService" ref="fortune"/>
+        <property name="name" value="${love2dev.name}"/>
+        <property name="email" value="${coach.email}"/>
+        <property name="education" value="${education}"/>
+    </bean>
+
+    <bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
+        <constructor-arg ref="fortune"></constructor-arg>
+    </bean>
+
+    <bean id="tCoach" class="com.luv2code.springdemo.TennisCoach">
+        <property name="fortuneService" ref="fortune"></property>
+    </bean>
+
+
+    <bean id="cCoach" class="com.luv2code.springdemo.CricketCoach">
+        <property name="fortuneService" ref="fortune"></property>
+        <!--            Spring Container will call the setFortuneService() method here .-->
+    </bean>
+
+
+    <bean id="fCoach" class="com.luv2code.springdemo.FortuneCoach">
+        <!--create constructor arg-->
+        <constructor-arg ref="fortune"></constructor-arg>
+        <!--                under the hood, Spring IoC will
+                                1. instantiate the HappyFortuneService()
+                                        HappyFortuneService hfs = new HappyFortuneService();
+                                2. instantiate the FortuneCoach and pass in the newly instantiated HappyFortuneService()
+                                        FortuneCoach fCoach = new FortuneCoach(hfs);
+         -->
+    </bean>
+
+    <!--        -->
+
+    <!--        <bean id="myFortune" class="com.luv2code.springdemo.FortuneCoach">-->
+    <!--&lt;!&ndash;                specify the instance to "inject"&ndash;&gt;-->
+    <!--                <constructor-arg ref="myCoach"/>-->
+    <!--        </bean>-->
+
+
+</beans>

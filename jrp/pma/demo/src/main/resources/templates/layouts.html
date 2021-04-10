@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html th:fragment="thyme" lang="en" xmlns:th="http://thymeleaf.org">
+
+<head th:fragment="bootstrap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{styles.css}">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <!--    <script type="text/javascript" th:src="@{chart.js}"/>-->
+    <!--    <script type="text/javascript" th:async th:src="@{chart.js}"/>-->
+</head>
+
+
+<nav th:fragment="navvy" class="navbar navbar-dark bg-dark">
+    <button class="btn btn-outline-success" type="button">
+        <a th:href="@{/}">Home</a>
+    </button>
+    <button class="btn btn-outline-success" type="button">
+        <a th:href="@{/employees}">Employees</a>
+    </button>
+    <button class="btn btn-outline-success" type="button">
+        <a th:href="@{/projects}">Projects</a>
+    </button>
+
+    <button class="btn btn-outline-success" type="button">
+        <a th:href="@{/stakeholders}">Stakeholders</a>
+    </button>
+</nav>
+
+
+</nav>
+
+
+</html>

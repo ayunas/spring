@@ -1,0 +1,75 @@
+2020-11-18 12:34:10.870  INFO 51955 --- [main] com.howtodoinjava.tester.App             : Starting App on AGC02C9B2JMD6R with PID 51955 (/Users/ayunas/spring/spring-boot/tester/target/classes started by ayunas in /Users/ayunas/spring/spring-boot/tester)
+2020-11-18 12:34:10.872  INFO 51955 --- [main] com.howtodoinjava.tester.App             : No active profile set, falling back to default profiles: default
+2020-11-18 12:34:11.310  INFO 51955 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-18 12:34:11.350  INFO 51955 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 2 JPA repository interfaces.
+2020-11-18 12:34:11.658  INFO 51955 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-18 12:34:11.664  INFO 51955 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-18 12:34:11.664  INFO 51955 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-18 12:34:11.719  INFO 51955 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-18 12:34:11.719  INFO 51955 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 809 ms
+2020-11-18 12:34:11.826  INFO 51955 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-18 12:34:11.853  INFO 51955 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-18 12:34:11.890  WARN 51955 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-18 12:34:11.894  INFO 51955 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-18 12:34:11.987  INFO 51955 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-18 12:34:12.054  INFO 51955 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-18 12:34:12.141  INFO 51955 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-18 12:34:12.154  INFO 51955 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-18 12:34:12.170  INFO 51955 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-18 12:34:12.172  INFO 51955 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-18 12:34:12.530  INFO 51955 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-18 12:34:12.536  INFO 51955 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-18 12:34:12.698  INFO 51955 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-18 12:34:12.706  INFO 51955 --- [main] com.howtodoinjava.tester.App             : Started App in 2.082 seconds (JVM running for 2.541)
+2020-11-18 12:34:28.772  INFO 51955 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-18 12:34:28.772  INFO 51955 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-18 12:34:28.777  INFO 51955 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-18 12:34:28.797  INFO 51955 --- [http-nio-8080-exec-1] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:30.462  INFO 51955 --- [http-nio-8080-exec-2] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:31.257  INFO 51955 --- [http-nio-8080-exec-3] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:32.008  INFO 51955 --- [http-nio-8080-exec-4] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:32.673  INFO 51955 --- [http-nio-8080-exec-5] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:33.697  INFO 51955 --- [http-nio-8080-exec-6] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:34.943  INFO 51955 --- [http-nio-8080-exec-7] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:35.957  INFO 51955 --- [http-nio-8080-exec-8] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:36.811  INFO 51955 --- [http-nio-8080-exec-9] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:37.609  INFO 51955 --- [http-nio-8080-exec-10] c.h.tester.ProductController             : getting a product by id : 1
+2020-11-18 12:34:40.702  INFO 51955 --- [http-nio-8080-exec-1] c.h.tester.ProductController             : getting a product by id : 2
+2020-11-18 12:34:41.793  INFO 51955 --- [http-nio-8080-exec-2] c.h.tester.ProductController             : getting a product by id : 2
+2020-11-18 12:34:42.571  INFO 51955 --- [http-nio-8080-exec-3] c.h.tester.ProductController             : getting a product by id : 2
+2020-11-18 12:49:39.237  INFO 51955 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-18 12:49:39.238  INFO 51955 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-18 12:49:39.239  INFO 51955 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-18 12:49:39.241  INFO 51955 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-18 12:49:44.166  INFO 52803 --- [main] com.howtodoinjava.tester.App             : Starting App on AGC02C9B2JMD6R with PID 52803 (/Users/ayunas/spring/spring-boot/tester/target/classes started by ayunas in /Users/ayunas/spring/spring-boot/tester)
+2020-11-18 12:49:44.173  INFO 52803 --- [main] com.howtodoinjava.tester.App             : No active profile set, falling back to default profiles: default
+2020-11-18 12:49:45.096  INFO 52803 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-18 12:49:45.097  INFO 52803 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-18 12:49:45.176  INFO 52803 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-18 12:49:45.381  INFO 52803 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-18 12:49:45.405  INFO 52803 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-18 12:49:45.470  INFO 52803 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-18 12:49:45.524  INFO 52803 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-18 12:49:45.597  INFO 52803 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-18 12:49:45.609  INFO 52803 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-18 12:49:45.913  INFO 52803 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-18 12:49:46.116  INFO 52803 --- [main] com.howtodoinjava.tester.App             : Started App in 2.172 seconds (JVM running for 2.633)
+2020-11-18 12:49:46.152  INFO 52803 --- [RMI TCP Connection(2)-192.168.1.82] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-18 14:21:51.492  INFO 52803 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-18 14:21:51.495  INFO 52803 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-18 14:21:54.542  INFO 58601 --- [main] com.howtodoinjava.tester.App             : Starting App on AGC02C9B2JMD6R with PID 58601 (/Users/ayunas/spring/spring-boot/tester/target/classes started by ayunas in /Users/ayunas/spring/spring-boot/tester)
+2020-11-18 14:21:54.544  INFO 58601 --- [main] com.howtodoinjava.tester.App             : No active profile set, falling back to default profiles: default
+2020-11-18 14:21:55.518  INFO 58601 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-18 14:21:55.519  INFO 58601 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-18 14:21:55.598  INFO 58601 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-18 14:21:55.823  INFO 58601 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-18 14:21:55.852  INFO 58601 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-18 14:21:55.937  INFO 58601 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-18 14:21:56.001  INFO 58601 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-18 14:21:56.088  INFO 58601 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-18 14:21:56.100  INFO 58601 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-18 14:21:56.472  INFO 58601 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-18 14:21:56.707  INFO 58601 --- [main] com.howtodoinjava.tester.App             : Started App in 2.404 seconds (JVM running for 2.903)
+2020-11-18 14:21:56.991  INFO 58601 --- [RMI TCP Connection(3)-192.168.1.82] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-18 14:24:33.871  INFO 58601 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-18 14:24:33.874  INFO 58601 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

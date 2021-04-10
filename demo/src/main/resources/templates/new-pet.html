@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>New Pet</title>
+</head>
+<body>
+<form action="/pets/save" method="POST" th:object="${pet}">
+    <input placeholder="Pet Name" th:field="${pet.name}">
+    <input placeholder="Animal Type" th:field="${pet.animalType}">
+    <button type="submit">Add Animal</button>
+</form>
+</body>
+</html>

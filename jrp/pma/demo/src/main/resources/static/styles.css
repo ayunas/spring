@@ -1,0 +1,14 @@
+body {
+    background-color: lightskyblue;
+
+}
+
+.table-chart {
+    display: flex;
+    align-items: flex-end;
+}
+
+.stage-table {
+    width: 50%;
+    /*margin : 0 auto;*/
+}
