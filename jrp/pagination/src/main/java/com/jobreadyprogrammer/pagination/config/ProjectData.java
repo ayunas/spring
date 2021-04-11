@@ -34,6 +34,8 @@ public class ProjectData implements CommandLineRunner {
 		loadData(records);
 	}
 
+
+
 	public Project fakeProject(int id) {
 		String name = null;
 		String stage = null;
@@ -41,7 +43,7 @@ public class ProjectData implements CommandLineRunner {
 		String description = null;
 		name = faker.commerce().productName();
 //		stage = faker.lorem().fixedString(5);
-		stage = statuses[(int) Math.round(Math.random())].name();
+		stage = statuses[(int) Math.floor(Math.random() + statuses.length-1)].name();
 		description = faker.lorem().paragraph(2);
 		return new Project(id,name,stage,description);
 	}

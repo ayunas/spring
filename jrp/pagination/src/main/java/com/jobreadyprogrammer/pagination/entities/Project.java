@@ -15,5 +15,5 @@ public class Project {
 	private int id;
 	private String name;
 	private String stage;
-	private String deccription;
+	private String description;
 }

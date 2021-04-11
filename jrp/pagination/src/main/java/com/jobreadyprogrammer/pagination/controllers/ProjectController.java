@@ -5,6 +5,7 @@ import com.jobreadyprogrammer.pagination.repos.iProjRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -42,6 +43,13 @@ public class ProjectController {
 		System.out.println(size);
 		Pageable sizedPage = PageRequest.of(page,size);
 		return projRepo.findAll(sizedPage);
+	}
+
+	@GetMapping(params = {"sort","desc"})
+	@ResponseStatus(HttpStatus.OK)
+	public Iterable<Project> getSortedProjectsByName(@RequestParam("sort") String sorter, @RequestParam("desc") boolean desc) {
+		System.out.println("desc : " + desc);
+		return desc ? projRepo.findAll(Sort.by(sorter).descending()) : projRepo.findAll(Sort.by(sorter).ascending());
 	}
 
 }
