@@ -47,7 +47,7 @@ public class ProjectController {
 
 	@GetMapping(params = {"sort","desc"})
 	@ResponseStatus(HttpStatus.OK)
-	public Iterable<Project> getSortedProjectsByName(@RequestParam("sort") String sorter, @RequestParam("desc") boolean desc) {
+	public Iterable<Project> getSortedProjects(@RequestParam("sort") String sorter, @RequestParam("desc") boolean desc) {
 		System.out.println("desc : " + desc);
 		return desc ? projRepo.findAll(Sort.by(sorter).descending()) : projRepo.findAll(Sort.by(sorter).ascending());
 	}
